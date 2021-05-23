@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         id="application"
+         point="org.eclipse.core.runtime.applications">
+      <application>
+         <run
+               class="hpmanagement.Application">
+         </run>
+      </application>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="hpmanagement.Perspective"
+            id="hpmanagement.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.views">
+      <view
+            class="view.main"
+            id="view.main"
+            name="欢迎使用">
+      </view>
+      <view
+            class="view.mean"
+            id="view.mean"
+            name="New ViewPart">
+      </view>
+      <view
+            class="view.menu"
+            id="view.menu"
+            name="菜单">
+      </view>
+      <view
+            class="manager.view.menu"
+            id="manager.view.menu"
+            name="菜单">
+      </view>
+      <view
+            class="doctor.view.menu"
+            id="doctor.view.menu"
+            name="New ViewPart">
+      </view>
+      <view
+            class="manager.view.main"
+            id="manager.view.main"
+            name="欢迎使用━(*｀∀´*)ノ亻!">
+      </view>
+      <view
+            class="manager.view.showUser"
+            id="manager.view.showUser"
+            name="用户">
+      </view>
+      <view
+            class="manager.view.AddUser"
+            id="manager.view.AddUser"
+            name="添加用户">
+      </view>
+      <view
+            class="manager.view.showDepartment"
+            id="manager.view.showDepartment"
+            name="科室">
+      </view>
+      <view
+            class="doctor.view.Menu"
+            id="doctor.view.Menu"
+            name="医务人员界面">
+      </view>
+      <view
+            class="doctor.view.ShowRegister"
+            id="doctor.view.ShowRegister"
+            name="姓名">
+      </view>
+      <view
+            class="customer.view.Menu"
+            id="customer.view.Menu"
+            name="菜单">
+      </view>
+      <view
+            class="medicine.view.ShowMedicine"
+            id="medicine.view.ShowMedicine"
+            name="药品信息">
+      </view>
+      <view
+            class="medicine.view.Menu"
+            id="medicine.view.Menu"
+            name="New ViewPart">
+      </view>
+   </extension>
+
+</plugin>
